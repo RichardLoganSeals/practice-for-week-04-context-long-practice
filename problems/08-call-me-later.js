@@ -1,4 +1,17 @@
-// Your code here
+class CallCenter{
+	constructor(name){
+		this.name = name;
+	}
+	sayHello = ()=> {
+		console.log(`Hello this is ${this.name}`)
+	}
+	callMeLater(delay){
+		setTimeout(this.sayHello,delay)
+
+		//if sayHello wasn't defined with fat-arrow syntax
+		//setTimeout(()=>{this.sayHello()}, delay)
+	}
+}
 
 
 /*****************************************************************************/
